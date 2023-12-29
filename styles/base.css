@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	height: 100%;
 }
 
 *,
@@ -11,11 +12,14 @@ html {
 body {
 	font-family: "ZonaPro", Arial, Helvetica, sans-serif;
 	min-width: 320px;
+	display: flex;
+	flex-direction: column;
 	font-weight: 300;
 	font-size: 22px;
 	color: #ba0808;
 	background-color: #efe5db;
 	overflow-x: hidden;
+	min-height: 100%;
 }
 
 img {

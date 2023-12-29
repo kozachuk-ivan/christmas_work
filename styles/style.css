@@ -66,12 +66,14 @@ header > address:hover > a {
 
 main {
 	margin: 0 125px 115px;
+	display: flex;
+	flex: 1 1 auto;
 }
 
 main > section:first-child {
 	display: flex;
-	align-items: center;
 	flex: 1 0 100%;
+	align-items: center;
 }
 
 main > section:first-child > div:first-child {

@@ -1,3 +1,15 @@
+@-webkit-keyframes rainbow {
+	0% {
+		background-position: 1%;
+	}
+	50% {
+		background-position: 99%;
+	}
+	100% {
+		background-position: 1%;
+	}
+}
+
 @keyframes rainbow {
 	0% {
 		background-position: 1%;
@@ -7,6 +19,18 @@
 	}
 	100% {
 		background-position: 1%;
+	}
+}
+
+@-webkit-keyframes carmove {
+	0% {
+		transform: translateX(0%);
+	}
+	50% {
+		transform: translateX(115%);
+	}
+	100% {
+		transform: translateX(0%);
 	}
 }
 
@@ -52,10 +76,13 @@ header > nav > ul {
 header > nav > ul > li,
 header > address {
 	background: linear-gradient(90deg, #dc143c, #00bfff, #2d5b2d);
+	-webkit-background-clip: text;
 	background-clip: text;
 	background-size: 300% 300%;
 	transition: 0.2s ease-in-out;
+	-webkit-animation: rainbow 2.5s ease-in-out infinite;
 	animation: rainbow 2.5s ease-in-out infinite;
+	-webkit-filter: brightness(1.1);
 	filter: brightness(1.1);
 }
 
@@ -103,6 +130,7 @@ main > section:first-child > div:first-child > button {
 main > section:first-child > div:first-child > button:hover {
 	background: linear-gradient(90deg, #dc143c, #00bfff);
 	background-size: 200% 200%;
+	-webkit-animation: rainbow 3s ease-in-out infinite;
 	animation: rainbow 3s ease-in-out infinite;
 }
 
@@ -114,6 +142,7 @@ main > section:first-child > div:nth-child(2) {
 
 main > section:first-child > div:nth-child(2) > img {
 	position: absolute;
+	-o-object-fit: cover;
 	object-fit: cover;
 	top: 0;
 	left: 0;
@@ -163,6 +192,7 @@ footer > address:last-child > ul > li:hover > a {
 }
 
 .animation {
+	-webkit-animation: carmove 3s ease-in-out forwards;
 	animation: carmove 3s ease-in-out forwards;
 }
 
